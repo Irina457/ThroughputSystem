@@ -13,9 +13,9 @@ public class RoomClientImpl implements RoomClient {
         return RestAssured.given()
                 .contentType(ContentType.JSON)
                 .baseUri(BASE_URL)
-//                метод get
+                //метод get
                 .request("GET", "/info/rooms")
-//                вывести всё на печать
+                //вывести всё на печать
                 .prettyPeek()
                 //проверить
                 .then()

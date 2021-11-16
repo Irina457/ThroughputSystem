@@ -1,7 +1,6 @@
 package irina.steps;
 
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
 import irina.client.AccessControlClient;
 import irina.client.RoomClient;
 import irina.client.impl.AccessControlClientImpl;
@@ -14,7 +13,7 @@ import org.junit.Assert;
 public class ApplicationTest {
     private final AccessControlClient accessControlClient = new AccessControlClientImpl();
 
-    @Then("^Check ability entrance/exit$")
+    @Given("^Check ability entrance/exit$")
     public void checkEntrance() {
         //получить доступ
         final Entrance entrance1 = accessControlClient.getAccess(Entrances.ENTRANCE, 1, 1);

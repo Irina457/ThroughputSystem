@@ -23,7 +23,7 @@ public class AccessControlClientImpl implements AccessControlClient {
                 //проверить
                 .then()
                 //что статус код 200
-//                .statusCode(200)
+                .statusCode(200)
                 .extract()
                 //Entrance
                 .body()
